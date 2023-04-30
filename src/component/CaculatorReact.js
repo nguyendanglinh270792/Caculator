@@ -82,11 +82,15 @@ function CaculatorReact() {
         if (indexOfPlus !== -1) {
           if (expresCheck.includes(expresstions[indexOfPlus + 1])) {
             setResult("Expresstions is error..!");
+          } else {
+            setResult(eval(expresstions.join("")));
           }
         }
         if (indexOfSub !== -1) {
           if (expresCheck.includes(expresstions[indexOfSub + 1])) {
             setResult("Expresstions is error..!");
+          } else {
+            setResult(eval(expresstions.join("")));
           }
         }
       } else {
